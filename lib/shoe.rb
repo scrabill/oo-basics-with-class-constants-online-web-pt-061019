@@ -7,6 +7,13 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand if !BRANDS.include? brand # If the brand being added is unique, add it to the BRANDS array
+
+    # BRANDS.each do |i|
+    #   if i != brand
+    #     BRANDS << brand
+    #   end
+    # end
+
   end
 
   def cobble
